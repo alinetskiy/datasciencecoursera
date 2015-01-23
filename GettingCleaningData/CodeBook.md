@@ -31,11 +31,14 @@ The following processing was applied to the original data set:
 * For each activity and each subject an average was calculated and only those averages are included in the final dataset.
 
 ## Features
-All features, except for "activity" and "subject"  have names that follow a certain naming convention:
+* "activity" feature contains an activity label, one of the following: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
+* "subject" has a numeric id of the test subject.
+
+All features except "activity" and "subject"  have names that follow a certain naming convention:
 * Prefix "time" means that the feature is a data directly captured from a device; "frequency" prefix denotes results of Fast Fourier Transform application to a signal.
+* "Body" means a body signal, "Gravity" means gravity acceleration signal.
+* "Acc" means data, retrieved from the accelerometer; "Gyro" means data, obtained from gyroscope.
 * "Mean" signifies that the feature originally was a mean value; "Std" means "standard deviation.
 * "X", "Y", and "Z" at the end mean axial data in X, Y and Z direction
 
-"activity" feature contains an activity label, one of the following: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
-"subject" has a numeric id of the test subject.
 

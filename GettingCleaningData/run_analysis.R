@@ -35,7 +35,6 @@ runAnalysis <- function () {
   features <- features[grep('mean\\(\\)|std\\(\\)',features$feature),] 
   features$feature <- gsub('^f', 'frequency', features$feature)
   features$feature <- gsub('^t', 'time', features$feature)
-  features$feature <- gsub('Acc', 'Acceleration', features$feature)
   features$feature <- gsub('Mag', 'Magnitude', features$feature)
   features$feature <- gsub('BodyBody', 'Body', features$feature)
   features$feature <- gsub('std\\(\\)', 'Std', features$feature)
